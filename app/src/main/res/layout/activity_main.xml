@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/textdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:layout_below="@+id/imageview"/>
+    
+    <Button
+        android:id="@+id/captureimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detecttext_btn"
+        android:text="Capture Image"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/detecttext_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="detect text"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
